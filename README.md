@@ -1,6 +1,7 @@
 # WeekDesktop 周桌面小部件
 
-**![image-20260325143703460](https://cdn.keihong.tech/20260325143703634.png)**
+<img width="1202" height="832" alt="image" src="https://github.com/user-attachments/assets/6121841e-83f5-4234-a299-257b3839cb17" />
+
 
 一款简洁优雅的 macOS 桌面小部件，显示当前日期、本周信息及年度进度。
 
