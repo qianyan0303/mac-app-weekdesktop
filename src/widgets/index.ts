@@ -1,5 +1,6 @@
 import type { WidgetMeta } from '../types/widget';
 import { WeekWidget } from './WeekWidget';
+import { AboutWidget } from './AboutWidget';
 
 export const WIDGET_REGISTRY: WidgetMeta[] = [
   {
@@ -9,5 +10,11 @@ export const WIDGET_REGISTRY: WidgetMeta[] = [
     component: WeekWidget,
     defaultSize: { width: 280, height: 310 },
   },
-  // 在此处追加新 Widget
+  {
+    id: 'about',
+    name: '关于',
+    description: '关于 WeekDesktop 小部件',
+    component: AboutWidget,
+    defaultSize: { width: 280, height: 320 },
+  },
 ];

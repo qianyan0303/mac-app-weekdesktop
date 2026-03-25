@@ -26,9 +26,10 @@ pub fn run() {
                         | NSWindowCollectionBehavior::NSWindowCollectionBehaviorIgnoresCycle;
                     let _: () = msg_send![ns_window, setCollectionBehavior: behavior];
 
-                    // 浮动层：在普通窗口上方但不影响交互
-                    // NSFloatingWindowLevel = 3
-                    let _: () = msg_send![ns_window, setLevel: 3i64];
+                    // kCGDesktopIconWindowLevel = 9
+                    // 显示在桌面图标上方，但在所有普通应用窗口下方
+                    // 可以点击，不遮挡任何应用
+                    let _: () = msg_send![ns_window, setLevel: 9i64];
                 }
             }
 

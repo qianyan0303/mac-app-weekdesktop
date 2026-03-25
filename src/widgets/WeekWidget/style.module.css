@@ -1,12 +1,6 @@
 @keyframes cellIn {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes progressGrow {
@@ -14,13 +8,10 @@
 }
 
 .widget {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 2px 14px 10px;
-  box-sizing: border-box;
+  padding: 4px 14px 12px;
   font-family: 'SF Pro Display', 'PingFang SC', system-ui, sans-serif;
 }
 
@@ -52,13 +43,12 @@
   letter-spacing: 0.05em;
 }
 
-/* 三格数据网格 */
+/* 三格数据 */
 .grid {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  flex-shrink: 0;
+  height: 76px;
 }
 
 .cell {
@@ -72,13 +62,12 @@
 }
 
 .value {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 800;
   line-height: 1;
-  color: var(--text-primary);
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.03em;
-  background: linear-gradient(160deg, #eeeef5 30%, rgba(126,184,247,0.7) 100%);
+  background: linear-gradient(160deg, #eeeef5 30%, rgba(126,184,247,0.75) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -87,7 +76,6 @@
 .unitLabel {
   font-size: 10px;
   color: var(--text-secondary);
-  letter-spacing: 0.03em;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -98,30 +86,30 @@
   font-size: 9px;
   font-weight: 800;
   color: var(--accent);
-  letter-spacing: 0.12em;
   background: var(--accent-bg);
   padding: 1px 4px;
   border-radius: 4px;
+  letter-spacing: 0.08em;
 }
 
 .divider {
   width: 1px;
-  height: 36px;
+  height: 34px;
   background: var(--divider);
   flex-shrink: 0;
 }
 
-/* 年度进度条 */
+/* 进度条 */
 .progressSection {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .progressHeader {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .progressLabel {
@@ -137,13 +125,12 @@
   font-weight: 700;
   color: var(--accent);
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.04em;
 }
 
 .progressTrack {
   width: 100%;
   height: 4px;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255,255,255,0.07);
   border-radius: 100px;
   overflow: hidden;
 }
@@ -151,11 +138,9 @@
 .progressFill {
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(90deg, var(--accent-dim) 0%, var(--accent) 100%);
-  box-shadow: 0 0 8px rgba(126, 184, 247, 0.4);
-  animation: progressGrow 1s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: 0.2s;
-  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background: linear-gradient(90deg, var(--accent-dim), var(--accent));
+  box-shadow: 0 0 8px rgba(126,184,247,0.4);
+  animation: progressGrow 1s cubic-bezier(0.16,1,0.3,1) 0.2s both;
 }
 
 /* 距年底剩余 */
@@ -163,7 +148,7 @@
   display: flex;
   align-items: center;
   padding: 7px 10px;
-  background: rgba(126, 184, 247, 0.05);
+  background: rgba(126,184,247,0.05);
   border: 1px solid var(--accent-border);
   border-radius: 10px;
 }
@@ -177,7 +162,7 @@
 }
 
 .remainingValue {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 800;
   color: var(--accent);
   font-variant-numeric: tabular-nums;
@@ -186,7 +171,7 @@
 }
 
 .remainingUnit {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--accent);
   opacity: 0.75;
@@ -196,12 +181,11 @@
   font-size: 10px;
   color: var(--text-secondary);
   white-space: nowrap;
-  margin-left: 1px;
 }
 
 .remainingDot {
   width: 1px;
-  height: 22px;
+  height: 20px;
   background: var(--divider);
   flex-shrink: 0;
   margin: 0 6px;
