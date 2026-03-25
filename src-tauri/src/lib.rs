@@ -26,11 +26,14 @@ pub fn run() {
                         | NSWindowCollectionBehavior::NSWindowCollectionBehaviorIgnoresCycle;
                     let _: () = msg_send![ns_window, setCollectionBehavior: behavior];
 
-                    // kCGDesktopIconWindowLevel = 9
-                    // 显示在桌面图标上方，但在所有普通应用窗口下方
-                    // 可以点击，不遮挡任何应用
+                    // 桌面图标层，不遮挡普通应用
                     let _: () = msg_send![ns_window, setLevel: 9i64];
                 }
+
+                // 用空菜单替换默认菜单，彻底移除「关于」等所有菜单项
+                use tauri::menu::Menu;
+                let empty_menu = Menu::new(app)?;
+                app.set_menu(empty_menu)?;
             }
 
             Ok(())
