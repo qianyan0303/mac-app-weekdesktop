@@ -169,14 +169,10 @@ mac-app-weekdesktop/
       <strong>微信</strong><br/>
       <img src="./docs/wechat-pay.png" width="180" alt="微信收款码"/>
     </td>
-    <td align="center">
-      <strong>支付宝</strong><br/>
-      <img src="./docs/alipay.png" width="180" alt="支付宝收款码"/>
-    </td>
   </tr>
 </table>
 
-> 图片待上传，请将收款码图片放到 `docs/` 目录下（文件名：`wechat-pay.png` / `alipay.png`）
+
 
 ## License
 
