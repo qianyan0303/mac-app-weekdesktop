@@ -83,6 +83,12 @@ body {
   opacity: 0.7;
 }
 
+.drag-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .close-btn {
   width: 16px;
   height: 16px;

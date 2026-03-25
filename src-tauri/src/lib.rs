@@ -26,11 +26,12 @@ pub fn run() {
                         | NSWindowCollectionBehavior::NSWindowCollectionBehaviorIgnoresCycle;
                     let _: () = msg_send![ns_window, setCollectionBehavior: behavior];
 
-                    // 桌面图标层，不遮挡普通应用
-                    let _: () = msg_send![ns_window, setLevel: 9i64];
+                    // level = -1：低于所有普通应用窗口，但高于桌面壁纸
+                    // 可以接收鼠标点击，不遮挡任何应用
+                    let _: () = msg_send![ns_window, setLevel: (-1i64)];
                 }
 
-                // 用空菜单替换默认菜单，彻底移除「关于」等所有菜单项
+                // 用空菜单替换默认菜单，移除「关于」等菜单项
                 use tauri::menu::Menu;
                 let empty_menu = Menu::new(app)?;
                 app.set_menu(empty_menu)?;

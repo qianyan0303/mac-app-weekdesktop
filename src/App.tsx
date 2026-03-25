@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* 拖动条：data-tauri-drag-region 是最可靠的拖动方式 */}
       <div className="drag-bar" data-tauri-drag-region>
         <span className="drag-bar-title" data-tauri-drag-region>⠿ WeekDesktop</span>
         <button className="close-btn" onClick={handleClose} title="隐藏">
@@ -33,18 +32,20 @@ function App() {
         </div>
       ))}
 
-      <div className="widget-toolbar">
-        {WIDGET_REGISTRY.map(widget => (
-          <button
-            key={widget.id}
-            className={`toolbar-btn ${activeWidgets.includes(widget.id) ? 'active' : ''}`}
-            onClick={() => toggle(widget.id)}
-            title={widget.description}
-          >
-            {widget.name}
-          </button>
-        ))}
-      </div>
+      {WIDGET_REGISTRY.length > 1 && (
+        <div className="widget-toolbar">
+          {WIDGET_REGISTRY.map(widget => (
+            <button
+              key={widget.id}
+              className={`toolbar-btn ${activeWidgets.includes(widget.id) ? 'active' : ''}`}
+              onClick={() => toggle(widget.id)}
+              title={widget.description}
+            >
+              {widget.name}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
