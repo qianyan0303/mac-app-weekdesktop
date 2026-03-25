@@ -167,7 +167,7 @@ mac-app-weekdesktop/
   <tr>
     <td align="center">
       <strong>微信</strong><br/>
-      <img src="./docs/wechat-pay.png" width="180" alt="微信收款码"/>
+      <img src="https://github.com/user-attachments/assets/ae8b54be-bb27-454a-b203-c5f83a5c19c8" width="180" alt="微信收款码"/>
     </td>
   </tr>
 </table>
