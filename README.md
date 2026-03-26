@@ -185,7 +185,8 @@ mac-app-weekdesktop/
 如果这个项目对你有帮助，欢迎请作者喝杯咖啡 ☕
 
 
-<img width="1080"  alt="WeekDesktop macOS Widget Screenshot" src="https://github.com/user-attachments/assets/ae8b54be-bb27-454a-b203-c5f83a5c19c8" />
+<img width="1080"  alt="WeekDesktop macOS Widget Screenshot" src="https://cdn.keihong.tech/20260326112333183.jpg" />
+
 
 
 
