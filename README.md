@@ -1,14 +1,35 @@
-# WeekDesktop 周桌面小部件
+# WeekDesktop - macOS Desktop Widget | 周桌面小部件
 
-<img width="1202" height="832" alt="image" src="https://github.com/user-attachments/assets/6121841e-83f5-4234-a299-257b3839cb17" />
+[中文](#中文介绍) | [English](#english-description)
 
+<img width="1202" height="832" alt="WeekDesktop macOS Widget Screenshot" src="https://github.com/user-attachments/assets/6121841e-83f5-4234-a299-257b3839cb17" />
 
-一款简洁优雅的 macOS 桌面小部件，显示当前日期、本周信息及年度进度。
+**一款简洁优雅的 macOS 桌面小部件 - 显示日期、周数、年度进度和倒计时**
+
+A minimal and elegant macOS desktop widget that displays date, week number, year progress, and countdown.
 
 ![macOS](https://img.shields.io/badge/macOS-11.0+-orange)
 ![Tauri](https://img.shields.io/badge/Tauri-2.0-rust)
 ![React](https://img.shields.io/badge/React-19-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)
+
+---
+
+## 中文介绍
+
+**WeekDesktop** 是一款 macOS 桌面小组件，能够在桌面上持续显示日期、周数、年度进度等信息。采用玻璃拟态设计，支持桌面置底（不影响其他窗口操作）、跨 Space 显示。
+
+### 关键词
+`macOS 桌面小部件` `macOS widget` `周数显示` `week number` `日期显示` `年度进度` `year progress` `桌面工具` `desktop tool` `Tauri` `React`
+
+---
+
+## English Description
+
+**WeekDesktop** is a beautiful macOS desktop widget that continuously displays date, week numbers, and year progress on your desktop. Features a glassmorphism design, stays below all application windows (non-intrusive), and persists across macOS Spaces.
+
+### Keywords
+`macOS widget` `desktop widget` `week counter` `date display` `year progress bar` `countdown widget` `glassmorphism` `desktop accessory` `Tauri app` `React widget`
 
 ## 功能特点
 
@@ -163,14 +184,8 @@ mac-app-weekdesktop/
 
 如果这个项目对你有帮助，欢迎请作者喝杯咖啡 ☕
 
-<table>
-  <tr>
-    <td align="center">
-      <strong>微信</strong><br/>
-      <img src="./docs/wechat-pay.png" width="180" alt="微信收款码"/>
-    </td>
-  </tr>
-</table>
+
+<img width="1080"  alt="WeekDesktop macOS Widget Screenshot" src="https://github.com/user-attachments/assets/ae8b54be-bb27-454a-b203-c5f83a5c19c8" />
 
 
 
